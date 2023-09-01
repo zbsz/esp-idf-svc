@@ -777,7 +777,7 @@ where
         let param = unsafe { param.as_ref() }.unwrap();
         let event = GapEvent::from((event, param));
 
-        info!("Got event {{ {:#?} }}", event);
+        //info!("Got event {{ {:#?} }}", event);
 
         CALLBACK.call(event);
     }
